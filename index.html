@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Markie Marzolf, Web Developer &amp; Content Designer</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="full-width" id="topnav">
+                    <div class="half-width">
+                        <h1 id="name">Markie Marzolf</h1>
+                    </div>
+                    <div class="half-width">
+                        <!-- Top Nav Menu -->
+                        <nav role="navigation" aria-label="main menu">
+                            <!--Added "role" and "aria-label" attributes to the nav bar to give greater semantic meaning and emphasis to my nav bar for the accessibility tree and assistive technologies, like screenreaders.-->
+                            <ul>
+                                <!-- <li><a class="active" href="#home">Home</a></li> -->
+                                <li><a href="#work">Work</a></li>
+                                <li><a href="#about">About</a></li>
+                                <!-- <li><a href="markiemarzolf.com/blog">Blog</a></li> -->
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="full-width">
+                    <h1 id="intro">Hi! I'm&nbsp;Markie,</h1>
+                    <h2>a web developer &amp;&nbsp;content&nbsp;designer<br> with inclusion in mind.</h2>
+                </div>
+            </header>
+
+            <main>
+                <section id="work">
+                    <h3>My Portfolio</h3>
+                    <!-- <h3>Samples from <a href="">My Portfolio</a></h3> -->
+                    <div class="work-samples">
+                        <div class="work-sample" id="sample1" onclick="location.href='https:/markie-m.github.io/Jubilee-Austen/'">
+                            <!-- Not sure what the issue is here in the onclick href location but since it's functioning, I'm not going to worry about it for now. -->
+                            <div class="sample-images">
+                                <figure>
+                                    <a href="https://markie-m.github.io/Jubilee-Austen/">
+                                        <img src="img/jubilee-austen-72ppi-res.jpg" alt="Jubilee austen portfolio"/>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="sample-blurb">
+                                <h4>Jubilee Austen Portfolio</h4>
+                                <h5>HTML5 &amp; CSS Website</h5>
+                                <p>This sleek portfolio is a static one-page site I coded up from a design comp. Using classes and IDs, delving into the box model, and floating elements, I gave the HTML a minimalist style.</p>
+                            </div>
+                        </div>
+
+                        <div class="work-sample" id="sample2" onclick="location.href='https:/markie-m.github.io/unplugged-retreat/'">
+                            <div class="sample-images">
+                                <figure>
+                                    <a href="https://markie-m.github.io/unplugged-retreat/">
+                                        <img src="img/unplugged-retreat-72ppi-res.jpg" alt="Unplugged retreat"/>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="sample-blurb">
+                                <h4>Unplugged Retreat</h4>
+                                <h5>Responsive Web Design &amp; Flexbox</h5>
+                                <p>I utilized the HTML5 Boilerplate template to code this 3&#8209;page website for a retreat from a design comp. Implementing responsive typography, Flexbox, media queries, and standard breakpoints, the site features a fully responsive dynamic layout and interactive navigation links. </p>
+                            </div>
+                        </div>
+                    
+                        <div class="work-sample" id="sample3" onclick="location.href='https:/www.thinktankqa.com/'">
+                            <div class="sample-images">
+                                <figure>
+                                    <a href="https://www.thinktankqa.com/">
+                                        <img src="img/ttqa-site-screenshot-72ppi-res.jpg" alt="Think Tank QA"/>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="sample-blurb">
+                                <h4>Think Tank QA</h4>
+                                <h5>WordPress &amp; PHP</h5>
+                                <p>I designed, built, and launched this fully responsive commercial WordPress site for a Quality Assurance startup. Using Adobe XD, Elementor, and a growing understanding of PHP, I created a custom child theme, deployed, and shipped this site in 6 weeks.</p>
+                            </div>
+                        </div>
+
+                        <div class="work-sample" id="sample4" onclick="location.href='https:/markie-m.github.io/rogue-pickings-site/'">
+                            <div class="sample-images">
+                                <figure>
+                                    <a href="https://markie-m.github.io/rogue-pickings-site/">
+                                        <img src="img/rogue-pickings-pic.jpg" alt="Rogue pickings site screenshot"/>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="sample-blurb">
+                                <h4>Rogue Pickings Website</h4>
+                                <h5>HTML &amp; CSS from Photoshop Design Comp</h5>
+                                <p>I translated a Photoshop design comp into a landing page for a local food truck. Check out the Menu tab for a page of my own creation featuring daily specials!</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="work-sample" id="sample5" onclick="location.href='https:/markie-m.github.io/recipe-card-site/'">
+                            <div class="sample-images">
+                                <figure>
+                                    <a href="https://markie-m.github.io/recipe-card-site/">
+                                        <img src="img/recipe-card-pic.jpg" alt="Recipe collection"/>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="sample-blurb">
+                                <h4>Recipe Card Collection</h4>
+                                <h5>HTML5 &amp; CSS Exercise</h5>
+                                <p>A cute site I coded to showcase some enticing recipes in a snappy interface. Understanding the box model played a big part in the success of this site. </p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <a class="portfolio-link" href="" >Click here to see my full Portfolio</a> -->
+                    <!-- Activate the above styled link that looks like a button that links to the Portfolio page when that's complete. -->
+                </section>
+                <section id="about">
+                    <h3>About Me</h3>
+                    <div class="full-width">
+                        <div class="third-width" id="item1">
+                            <!-- The above "item2" id was most recently a "third-width" class div and was originally "half-width" with all the text. Because of the way I want them to stack responsively, I'm changing the classes of the image, the main h4 and the rest of the About copy each to "third-width" class divs. -->
+                            <div id="about-img-frame">
+                                <figure>
+                                    <img src="img/Markie_Headshot__1MB__0.33x-removebg-preview.png" alt="A confident white developer with long brown hair, Markie, wears glasses and a striped blouse."/>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                        <div class="third-width" id="item2">
+                            <h4>I am passionate about empowering&nbsp;users to&nbsp;access&nbsp;information on&nbsp;the&nbsp;web.</h4>
+                        </div>
+                        <div class="third-width" id="item3">
+                            <p>I'm a detail-oriented web developer with a professional background in writing and editing accessible media. I have an eye for grammatical accuracy and a growing fluency in HTML, CSS, and JavaScript. I employ my heightened attention to detail and affinity for editing to write clean, elegant code.
+                            </p>
+                            <h4>How can I help your content reach&nbsp;a&nbsp;wider&nbsp;audience?</h4>
+                        </div>
+                     </div> <!-- end .Full-width div -->
+                </section>
+                <section id="contact">
+                    <div class="full-width">
+                        <h3>Let's Connect</h3>
+                        <div class="third-width">
+                                <h4>Hire Me</h4>
+                                <p id="email"><a href="mailto:marzolfmarkie@gmail.com">marzolfmarkie [@] gmail [dot] com</a></p>
+                        </div>
+                        <div class="third-width">
+                            <h4>Follow Me</h4>
+                            <ul>
+                                <li>
+                                    <!-- <a href="https://www.linkedin.com/in/markie-marzolf/" target="_blank"><img src="img/linkedin-coral.png" alt="linkedin icon" /></a> -->
+                                    <a href="https://www.linkedin.com/in/markie-marzolf/">
+                                        <svg aria-hidden="true" focusable="false" id="linkedin" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                            <path id="linkedin-2" data-name="linkedin" d="M48.286,32H3.7A3.73,3.73,0,0,0,0,35.749v44.5A3.73,3.73,0,0,0,3.7,84H48.286A3.74,3.74,0,0,0,52,80.251v-44.5A3.74,3.74,0,0,0,48.286,32ZM15.716,76.571H8.009V51.755h7.719V76.571ZM11.862,48.366A4.469,4.469,0,1,1,16.331,43.9,4.471,4.471,0,0,1,11.862,48.366ZM44.606,76.571H36.9V64.5c0-2.879-.058-6.581-4-6.581-4.016,0-4.631,3.134-4.631,6.372v12.28H20.556V51.755H27.95v3.389h.1a8.118,8.118,0,0,1,7.3-4c7.8,0,9.251,5.142,9.251,11.828Z" transform="translate(0 -32)"/>
+                                        </svg>
+                                        <span class="visually-hidden">Find Markie Marzolf on LinkedIn.</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <!-- <a href="mailto:marzolfmarkie@gmail.com"><img src="img/envelope-square-coral.png" alt="envelope" id="envelope"/></a> -->
+                                    <!-- Using SVG icons here looks much crisper visually and enables the color change on hover that I want to visually set off the icons. BUT solely using icons as Social Media links isn't great for a11y, SO I added the aria-hidden and focusable properties to hide the icons from assistive tech & the visually hidden span class to visually hide some useful link text from the screen while making it accessible to assistive tech. 
+                                    See this link for more info: https://css-tricks.com/a-complete-guide-to-links-and-buttons/#links-heading-1 -->
+                                    <!-- <a href="mailto:marzolfmarkie@gmail.com">
+                                        <svg aria-hidden="true" focusable="false" id="envelope-square" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                            <path id="envelope-square-2" data-name="envelope-square" d="M46.429,32H5.571A5.571,5.571,0,0,0,0,37.571V78.429A5.571,5.571,0,0,0,5.571,84H46.429A5.571,5.571,0,0,0,52,78.429V37.571A5.571,5.571,0,0,0,46.429,32ZM20.674,58.709C10.148,51.069,10.255,51.05,7.429,48.85V45.929a2.786,2.786,0,0,1,2.786-2.786H41.786a2.786,2.786,0,0,1,2.786,2.786V48.85c-2.829,2.2-2.72,2.22-13.246,9.859C30.107,59.6,27.682,61.74,26,61.714,24.317,61.739,21.895,59.6,20.674,58.709Zm23.9-5.145V70.071a2.786,2.786,0,0,1-2.786,2.786H10.214a2.786,2.786,0,0,1-2.786-2.786V53.563c1.62,1.253,3.869,2.929,11.062,8.15,1.644,1.2,4.408,3.731,7.509,3.715,3.121.016,5.924-2.558,7.512-3.717C40.7,56.492,42.951,54.816,44.571,53.563Z" transform="translate(0 -32)"/>
+                                        </svg>
+                                        <span class="visually-hidden">Email marzolf markie at gmail dot com.</span>
+                                    </a>
+                                </li> -->
+                                
+                                <li>
+                                    <!-- <a href="https://github.com/markie-m" target="blank"><img src="img/github-square-coral.png" alt="github icon"/></a> -->
+                                    <a href="https://github.com/markie-m">
+                                        <svg aria-hidden="true" focusable="false" id="github-square" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                            <path id="github-square-2" data-name="github-square" d="M46.429,32H5.571A5.573,5.573,0,0,0,0,37.571V78.429A5.573,5.573,0,0,0,5.571,84H46.429A5.573,5.573,0,0,0,52,78.429V37.571A5.573,5.573,0,0,0,46.429,32ZM32.187,76.537c-.975.174-1.335-.429-1.335-.929,0-.627.023-3.83.023-6.419a4.522,4.522,0,0,0-1.312-3.563c4.295-.476,8.821-1.068,8.821-8.485A5.959,5.959,0,0,0,36.4,52.614a7.259,7.259,0,0,0-.2-5.223c-1.613-.5-5.3,2.078-5.3,2.078a18.26,18.26,0,0,0-9.657,0s-3.691-2.577-5.3-2.078a7.2,7.2,0,0,0-.2,5.223,5.829,5.829,0,0,0-1.811,4.527c0,7.382,4.329,8.009,8.624,8.485a4.207,4.207,0,0,0-1.23,2.588c-1.1.5-3.923,1.358-5.606-1.613a4.044,4.044,0,0,0-2.96-1.985c-1.88-.023-.128,1.184-.128,1.184,1.254.58,2.136,2.809,2.136,2.809,1.126,3.447,6.512,2.287,6.512,2.287,0,1.613.023,4.237.023,4.713,0,.5-.348,1.1-1.335.929A19.257,19.257,0,0,1,6.941,58.163a18.42,18.42,0,0,1,18.8-18.746c10.655,0,19.291,8.09,19.291,18.746A19.08,19.08,0,0,1,32.187,76.537ZM20.8,69.445c-.221.046-.429-.046-.453-.2-.023-.174.128-.325.348-.371.221-.023.429.07.453.221s-.116.3-.348.348Zm-1.1-.1c0,.151-.174.279-.406.279-.255.023-.429-.1-.429-.279,0-.151.174-.279.406-.279C19.488,69.038,19.7,69.166,19.7,69.34Zm-1.59-.128c-.046.151-.279.221-.476.151-.221-.046-.371-.221-.325-.371s.279-.221.476-.174C18.014,68.888,18.165,69.062,18.107,69.213Zm-1.428-.627c-.1.128-.325.1-.5-.07-.174-.151-.221-.371-.1-.476.1-.128.325-.1.5.07C16.726,68.261,16.784,68.493,16.679,68.586Zm-1.056-1.056c-.1.07-.3,0-.429-.174s-.128-.371,0-.453c.128-.1.325-.023.429.151A.34.34,0,0,1,15.623,67.529ZM14.869,66.4c-.1.1-.279.046-.406-.07-.128-.151-.151-.325-.046-.406.1-.1.279-.046.406.07C14.95,66.148,14.973,66.322,14.869,66.4Zm-.778-.859a.219.219,0,0,1-.325.046c-.151-.07-.221-.2-.174-.3a.273.273,0,0,1,.325-.046C14.068,65.324,14.137,65.452,14.091,65.545Z" transform="translate(0 -32)"/>
+                                        </svg>
+                                        <span class="visually-hidden">Find Markie Marzolf on GitHub.</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="third-width">
+                                <h4>Meet Me</h4>
+                                <p>Let's share ideas over a cup of coffee.</p>
+                            </div>
+                    </div>
+                </section>
+                <footer>
+                    <div id="credit">
+                        <!-- <p><span>Photo by <a href="https://unsplash.com/@tony_cm__?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Anthony Choren</a> on <a href="https://unsplash.com/@tony_cm__?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p> -->
+                    </div>
+                    <div id="copyright"> 
+                        <p>Copyright 2021 | Markie Marzolf </p>
+                    </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

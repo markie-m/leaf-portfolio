@@ -1,0 +1,907 @@
+/****** RESPONSIVE PORTFOLIO *****/
+
+/* Colors!
+
+*/
+
+/*** ASTERISK - the UNIVERSAL SELECTOR (style applies to all rules ***/
+* {
+    /* box-sizing: border-box; */
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+/* VARIABLES/COLOR PALETTE STYLES */
+:root {
+    --main-color: #154D3F;
+    --secondary-color: #3F7159;
+    --main-accent-color: #FF9C90;
+    --secondary-accent-color: #FFD2CD; 
+    /* --secondary-accent-color: #fdff0d; */
+}
+/*** BASE STYLES ***/
+body {
+    color: var(--main-color, darkgreen);
+    /* color: #154D3F; */
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url('../fonts/Atkinson-Hyperlegible-Regular-102.otf') format('opentype');
+    src: url('../fonts/Atkinson-Hyperlegible-Regular-102.eot') format('eot');
+    src: url('../fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+    src: url('../fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url('../fonts/Atkinson-Hyperlegible-Bold-102.otf') format('opentype');
+    src: url('../fonts/Atkinson-Hyperlegible-Bold-102.eot') format('eot');
+    src: url('../fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+    src: url('../fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+#wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    flex-flow: row wrap;
+    width: 100%;
+}
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+main {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+#work, #about, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h3 {
+    font-family: 'Noto Serif', serif;
+}
+h2 {
+    color: #ffffff;
+    font-size: 1.75em;
+    line-height: 1.5em;
+    margin: 2% 3.25% 50%;
+    text-align: center;
+    text-shadow: 2px 2px 2px #154D3F;
+}
+h3 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3% 0;
+    text-align: center;
+    width: 100%;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+    margin: 0;
+}
+p {
+    font-size: 1em;
+}
+figure {
+    margin: 0;
+}
+/*** END BASE STYLES ***/
+
+
+/*** GRID STYLES ***/
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    /* width: 1200px; */
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#topnav .half-width {
+    /* float: left;
+    width: 600px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* This #topnav .half-width selector makes the Mobile view of the heading name and Nav bar stack at the top center of the viewport. */
+
+.third-width {
+    /* float: left; */
+    /* width: 400px; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+/***** HEADER *****/
+header {
+    /* background: url('../img/green-leaves.jpg'); */
+    
+    /* Green leaves w bright yellow/green gradient: */
+    /* background: linear-gradient(180deg, rgba(253, 255, 13, .75), 0%, rgba(4, 120, 87, .25) 100%), url("../img/green-leaves.jpg");  */
+
+    /* Green leaves w coral pink/green gradient: */
+    background: linear-gradient(180deg, rgba(255, 176, 167, .75), 0%, rgba(4, 120, 87, .25) 100%), url("../img/green-leaves.jpg");
+
+    /* Green leaves w darkish green/green gradient: */
+    /* background: linear-gradient(180deg, rgba(16, 185, 129, .25),  0%,rgba(4, 120, 87, .5) 100%), url("../img/green-leaves.jpg"); */
+
+    /* Different pic/gradient: */
+    /* background: linear-gradient(180deg, rgba(253, 230, 138, .25), 0%, rgba(167, 243, 208, .25), 50%, rgba(16, 185, 129, .25) 100%), url("../img/bilal-o-ljXekphwr40-unsplash-flip.jpg"); */
+
+
+    /* THIS IS THE ONE (BELOW)! Green leaves w light green gradient: */
+    /* background: linear-gradient(180deg, rgba(253, 230, 138, .25), 0%, rgba(167, 243, 208, .25), 50%, rgba(16, 185, 129, .25) 100%), url("../img/green-leaves.jpg"); */
+
+
+    /* These 2 backgrounds work with different gradient overlays. */
+
+    /* background-image: linear-gradient(180deg, rgba(16, 185, 129, .25), rgba(4, 120, 87, .25)); */
+    /* background-color: rgba(4, 120, 87, 1); */
+    
+    background-position: center;
+    background-size: cover;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px #154D3F;
+}
+#name {
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 1% 0 0;
+    margin: 1% 0 .5%;
+    font-size: 1.5em;
+}
+#intro {
+    /* color: var(--secondary-accent-color, #FDFF0D);  */
+    /* color: #FFF690; */
+    /* color: #ffbeb7; */
+    color: #FFD2CD;
+    font-family: 'Noto Serif', serif;
+    font-size: 2.875em;
+    font-style: normal;
+    font-weight: bold;
+    margin: 60% 0 2%;
+    text-align: center;
+    text-shadow: 2px 2px 2px #154D3F;
+    width: 100%;
+}
+
+/***** NAVIGATION *****/
+#topnav {
+    display: flex;
+    justify-content: space-between;
+    /* background:rgba(167, 243, 208, .5); */
+    background-color: rgba(212, 232, 223, .5);
+}
+nav {
+    /* float: right;
+    padding: 25px 25px 30px;
+    width: 50%; */
+    font-size: 1.125em;
+    width: 100%;
+}
+nav ul {
+    padding: 0;
+    margin: 1.5% 3%;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 3px solid #FF9C90; */
+}
+nav ul li {
+    /* display: inline; */
+    list-style-type: none;
+    /* margin: 0 2%; */
+    padding: 2% 2% 0;
+    border-top: 3px solid #154d3f;
+}
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active {
+    /* color: #FF9C90; */
+    /* font-size: 1em; */
+    margin-right: 1em;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #154D3F;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    /* text-decoration: none; */
+    text-decoration-thickness: 2px;
+    /* text-underline-offset: 3%; */
+    transition: all 0.25s linear;
+    position: relative;
+}
+nav ul li a:link:last-child {
+/* nav ul li a:visited { */
+    margin-right: 0;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    /* color: #ffb0a7; */
+    color: #FFD2CD;
+} 
+
+nav ul li a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ffb0a7;
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+nav ul li a:hover:before {
+    transform: scale(1);
+}
+/* The preceding 2 selectors (nav ul li a:before & nav ul li a:hover:before)enable the animated l-to-r fill effect that I like. */
+
+/***** WORK *****/
+#work {
+    /* background-color: #d4e8df; */
+    background-color: #f6f1ee;
+    height: 45%;
+    /* max-width: 1200px; */
+    width: 100%;
+    flex-flow: row wrap;
+}
+/* It's the flex-flow: row wrap ruleset here on the #work selector that enables the .work-samples cards to slide up neatly into rows at the @media (min-width: 1200px) (desktop) breakpoint. */
+/* An important trick to getting flexbox to behave as expected is to apply the display:flex & flex-flow: row wrap ON THE IMMEDIATE PARENT ELEMENT. If there are other elements/divs in between the two elements you're trying to target, the flex properties won't be applied. */
+
+#work h3 {
+    /* text-shadow: 2px 2px 10px #aebeb7,
+    -2px -2px 10px #faffff; */
+    margin: 3% 0 0;
+}
+
+#work h4 {
+    font-weight: bold;
+    margin: 1em 0 .5em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+#work img {
+    max-width: 100%;
+    height: auto;
+    /* border: 2px solid #faffff; */
+    border: 2px solid #aebeb7;
+    border-radius: 2px;
+}
+/* Setting the #work img max-width: 100% & height: auto makes the image size responsively with the browser window. */
+/* .sample-images {
+    margin: 2%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #0f0f0f;
+} */
+/* #work .full-width {
+    border: 1px solid #3F7159;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 3%;
+    overflow: auto;
+} */
+.work-samples {
+    /* width: 80%; */
+    /* border: 1px solid #3F7159; */
+    /* border-radius: 10px; */
+    /* margin: 3%; */
+    padding: 4% 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /* transition: all .2s ease-in-out; */
+}
+.work-sample {
+    width: 80%;
+    /* border: 1px solid #3F7159; */
+    /* border-radius: 10px; */
+    margin: 3%;
+    padding: 5%;
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+    /* flex: 1; */
+    border-radius: 25px;
+    /* background: #d4e8df; */
+    box-shadow:  12px 12px 24px #aebeb7, 
+    -12px -12px 24px #faffff;
+    /* I used the neumorphic generator here (https://neumorphism.io/#d4e8df) to code up this cool neumorphic "button" link feature for the .work-sample cards. */
+} 
+/* #work .full-width:hover {
+    border: 1px solid #FF9C90;
+    box-shadow: 0 0 2px 1px #FF9C90;
+} */
+
+.work-sample:hover, 
+.work-sample:focus {
+    /* border: 1px solid var(--main-accent-color, #FF9C90); */
+    /* box-shadow: 0 0 5px 3px #FF9C90; */
+    transform: scale(1.01);
+    cursor: pointer;
+    background: linear-gradient(145deg, #ffffff, #ddd9d6);
+    box-shadow:  20px 20px 60px #d1cdca,
+    -20px -20px 60px #ffffff;
+}
+.work-sample:active {
+    background: #f6f1ee;
+    box-shadow:  inset 20px 20px 60px #d1cdca,
+    inset -20px -20px 60px #ffffff;
+}
+#work figure {
+    width: 100%;
+    height: auto;
+}
+.sample-blurb {
+    min-height: 50px;
+    box-sizing: border-box;
+}
+#work a {
+    text-decoration: none;
+}
+#work a:visited {
+    color: #154D3F;
+}
+#work a:active,
+#work a:focus {
+    /* color:#FF9C90; */
+    /* text-shadow: .5px 1px #154D3F; */
+}
+#work p {
+    padding: 0 1.25em 0 0;
+}
+
+a.portfolio-link {
+    /* background: var(--primary-color); */
+    background-color: rgba(255, 156, 144, .75);
+    color: #FFF;
+    font-size: 1.125em;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 30px;
+}
+a.portfolio-link:hover {
+    background-color: rgba(255, 156, 144, 1);
+}
+a.portfolio-link:visited {
+    color: #fff;
+}
+
+/* ABOUT */
+/* I'm using CSS Grid in my About section to address an issue I had getting my main About Me text (#item4) to line up next to the image and beneath the Spotlight text (#item3). */
+
+/* In the MOBILE view, the grid will be a 1colx4row grid, meaning there will be a total of 2 column lines and 5 row lines with which to measure. See https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/ for more basic Grid knowledge. */
+#about {
+    background-color: #3F7159;
+    color: #ffffff;
+    height: 20%;
+    width: 100%;
+    flex-flow: row wrap;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap; */
+    /* display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto; */
+}
+/* I changed the grid structure up a bit here so I can use the .full-width container to contain the items well past the max-width:1200px mark. So NOW in the MOBILE view, the grid will be a 1colx3row grid (because it no longer contains the About Me h3 heading), meaning there will be a total of 2 column lines and 4 row lines with which to measure.  */
+#about .full-width {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+#about .third-width {
+    /* box-sizing: border-box; */
+    line-height: 1.875em;
+    padding: 1em 2em;
+    justify-self: center;
+    /* display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center; */
+}
+#about h3 {
+    text-shadow: 2px 2px 2px #154D3F;
+    width: 100%;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+#about h4 {
+    /* color: #FF9C90; */
+    color: #ffd2cd;
+    /* margin: 20px 0; */
+    margin: .75em 0 1.25em;
+    text-shadow: 1px 1px 2px #154D3F;
+    /* width: 100%; */
+    text-align: center;
+}
+#about h4:first-child {
+    margin: 0 0;
+    /* text-align: center; */
+}
+
+#about p {
+    margin: 0 0 .5em;
+    text-align: justify;
+}
+#about img {
+    /* filter: grayscale(100%); */
+    max-width: 100%;
+    height: auto;
+    /* background:rgba(255, 156, 144, .75); */
+    /* background: rgb(255, 210, 205); */
+    /* background: linear-gradient(180deg, rgba(255, 156, 144, .75), 0%, rgba(252, 162, 153, .75), 65%, rgba(255, 210, 205, .75) 100%); */
+
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-radial-gradient(#ffc3a0 50%, rgba(255, 156, 144, .75) 75%, rgba(255, 210, 205, .75) 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(#ffc3a0 50%, rgba(255, 156, 144, .75) 75%, rgba(255, 210, 205, .75) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+    border-radius: 48% 52% 63% 37% / 39% 61% 39% 61%;
+}
+#about-img-frame {
+    background: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 41% 59% 57% 43% / 46% 48% 52% 54%;
+    margin: 0 15%;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+#item1 {
+    /* background: yellow; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#item2 {
+    /* background: orange; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 445px;
+}
+#item3 {
+    /* background: purple; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    max-width: 530px;
+}
+#item3 h4 {
+    font-weight: 400;
+}
+
+/* CONTACT */
+#contact {
+    background-color: #154D3F;
+    color: #FFFFFF;
+    height: 15%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+#contact .third-width {
+    /* text-align: center; */
+    width: 100%;
+}
+#contact h4 {
+    width: 100%;
+    margin: 0.813em 0 0;
+}
+#email a {
+    color: #FFFFFF;
+    /* text-decoration: none; */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+    transition: all 0.25s linear;
+    position: relative;
+}
+#email a:hover,
+#email a:focus {
+    /* color: rgb(255, 156, 144); */
+    /* color: #ffb0a7; */
+    color: #FFD2CD;
+}
+#email a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffb0a7;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+#email a:hover:before {
+    transform: scale(1);
+}
+
+#contact ul {
+    margin: 1.875em 0 1.563em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#contact ul li {
+    /* display: inline-block; */
+    padding: 0 10%;
+    text-align: center;
+    list-style-type: none;
+}
+/* #contact ul li a:link, 
+#contact ul li a:visited {
+    color:#FFB82E;
+} */
+
+
+/* img#envelope {
+    height: 50px;
+    padding-left: 0;
+    width: 50px;
+} */
+
+svg {
+    width: 50px;
+    height: 50px;
+    fill: #FF9C90;
+    transition: all .2s ease-in-out;
+}
+svg:hover, 
+svg:focus {
+    fill: #FFF;
+    transform: scale(1.1);
+}
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+/* This .visually-hidden selector makes the SVG icons more accessible, replacing a visual cue (icon) with a bit of descriptive text for screenreaders and other assistive tech. */
+
+#contact p {
+    margin: 1em 0 2em;
+}
+
+/***** FOOTER *****/
+footer {
+    background-color: #154D3F;
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.813em 0 0;
+}
+footer p {
+    margin: 0;
+    padding: .5em;
+}
+#credit a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+#credit a:visited {
+    text-decoration: none;
+}
+#credit a:hover {
+    color: #FF9C90;
+}
+
+
+/*---------- RESPONSIVE STYLES ----------*/
+@media (max-width:767px) {
+
+}
+
+/*---------- TABLET ----------*/
+@media (min-width: 768px) {
+    h4 {
+        font-size: 1.375em;
+    }
+    h5 {
+        font-size: 1.125em;
+    }
+    p {
+        font-size: 1.125em;
+    }
+    .half-width {
+        width: 42.5%;
+    }
+
+    #name {
+        font-size: 2em;
+        padding: 0 0 0 4%;
+    }
+    #topnav {
+        background: transparent;
+    }
+    #topnav .half-width {
+        width: 50%;
+        justify-content: space-between;
+        display: block;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    nav ul{
+        margin: 3%;
+        padding: 0 2% 0 0;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        padding: 2% 2% 1%;
+        border-top: none;
+        border-bottom: 3px solid #154d3f;
+        /* border-bottom: 3px solid #a7f3d0; */
+    }
+    nav ul li a {
+        margin-right: 1em;
+    }
+    nav ul li a:before {
+        height: 5px;
+        bottom: -10px; /* this is to match where the border is */
+    }
+
+    
+    #intro {
+        font-size: 3.125em;
+        margin: 35% 0 1%;
+    }
+    h2 {
+        font-size: 2.25em;
+        margin: 2% 3.25% 25%;
+    }
+    h3 {
+        font-size: 2.25em;
+        margin: 1.125em 0 0.563em;
+    }
+   
+    .work-samples {
+        padding: 0;
+    }
+    .work-sample {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3%;
+    }
+    #sample1 {
+        /* margin: .75% 3% 3%; */
+    }
+    .sample-images {
+        width: 55%;
+        margin: 0;
+    }
+    .sample-blurb {
+        width: 40%;
+    }
+    /* #about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #about-img-frame {
+        margin: 0;
+    }
+    #about .third-width {
+        width: 40%;
+    }
+    #about .third-width:last-child {
+        width: 100%;
+    } */
+
+    /* In the TABLET view, the ABOUT section CSS grid will be a 2colx2row grid, meaning there will be a total of 3 column lines and 3 row lines with which to measure. */
+    #about .full-width {
+        width: 100%;
+        /* display: grid; */
+          grid-template-columns: 50% 50%;
+          grid-template-rows: auto auto;
+        }
+        #about .third-width {
+            justify-self: initial;
+        }
+        /* #about h3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        } */
+        #item1 {
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        #item1.third-width {
+            padding: 1em 0 1em 2em;
+        }
+        #item2 {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          max-width: 400px;
+        }
+        #item2.third-width {
+            padding: 1em 0 1em 0;
+        }
+        #about h4:first-child {
+            /* margin: 1.25em 0 0; */
+            text-align: left;
+        }
+        #item3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          margin: .5em 3%;
+          max-width: 1200px;
+        }
+        #about p {
+            /* margin: .5em 3%; */
+        }
+        #copyright p {
+            font-size: 1em;
+        }
+}
+
+/*--------------- DESKTOP ---------------*/
+@media (min-width: 1200px) {
+    /* .third-width {
+        width: 33.33%;
+    } */
+    .full-width {
+        max-width: 1200px;
+        /* I want this max-width set on a div that wraps each section to keep each from expanding wildly as the browser window enlarges well past 1200px. BUT I need to go back into the HTML and put in .full-width wrappers and prob fix corresponding issues w the dynamic layout as I mess with the responsive structure. */
+    }
+    .work-sample {
+        max-width: 600px;
+    }
+
+    /* HERO SECTION */
+    nav {
+        font-size: 1.25em;
+    }
+    nav ul li {
+        /* border-bottom: 3px solid #154d3f; */
+        border-bottom: 3px solid #a7f3d0;
+    }
+    nav ul li a:before {
+        bottom: -12px; /* this is to match where the border is */
+    }
+
+    #intro {
+        font-size: 3.75em;
+        margin: 20% 0 .5%;
+    }
+    h2 {
+        font-size: 3em;
+        margin: 2% 4% 15%;
+    }
+    
+    /* WORK SECTION */
+    .work-sample {
+        width: 42%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 3%;
+    } 
+    
+    .sample-images {
+        width: 100%;
+    }
+    .sample-blurb {
+        width: 100%;
+    }
+    .work-sample p {
+        min-height: 105px;
+    }
+    /* This is to create a uniform height for all the .work-sample cards. */
+
+    /* #about .third-width:first-child {
+        width: 40%;
+    } */
+    /* #about .third-width:last-child {
+        width: 40%;
+    } */
+
+    /* In the DESKTOP view, the grid will STAY a 2colx2row grid, meaning there will be a total of 3 column lines and 3 row lines with which to measure and ENABLE the DESIRED REPOSITIONING of item4. */
+    #about .full-width {
+        width: 100%;
+        display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: auto auto;
+        }
+        /* #about .third-width {
+            width: 100%;
+        } */
+        /* #about h3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        } */
+        #about h4:first-child {
+            margin: 1.25em 0 0;
+            text-align: center;
+        }
+        #item1 {
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        #item1.third-width {
+            padding: 1em 0 0 2em;
+        }
+        #item2 {
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        #item2.third-width {
+            padding: 1em 0 1em 2em;
+        }
+        #item3 {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          margin: 0;
+        }
+        #item3.third-width {
+        padding: 0 20% 0 0;
+        }
+    #about-img-frame {
+        margin: 0 15% 10% 20%;
+    }
+    #about p {
+        margin: .5em 0;
+    }
+    
+    /* CONTACT STYLES */
+    #contact .third-width {
+        width: 33.33%;
+    }
+}
