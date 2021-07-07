@@ -79,9 +79,10 @@ h2 {
     color: #ffffff;
     font-size: 1.75em;
     line-height: 1.5em;
-    margin: 2% 3.25% 50%;
+    margin: 2% 3.25% 60%;
     text-align: center;
     text-shadow: 2px 2px 2px #154D3F;
+    font-weight: 400;
 }
 h3 {
     font-weight: bold;
@@ -118,8 +119,7 @@ figure {
     align-items: center;
 }
 #topnav .half-width {
-    /* float: left;
-    width: 600px; */
+    /* width: 600px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -127,7 +127,6 @@ figure {
 /* This #topnav .half-width selector makes the Mobile view of the heading name and Nav bar stack at the top center of the viewport. */
 
 .third-width {
-    /* float: left; */
     /* width: 400px; */
     /* width: 100%; */
     display: flex;
@@ -203,11 +202,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     /* background:rgba(167, 243, 208, .5); */
-    background-color: rgba(212, 232, 223, .5);
+    /* background-color: rgba(212, 232, 223, .5); */
 }
 nav {
-    /* float: right;
-    padding: 25px 25px 30px;
+    /* padding: 25px 25px 30px;
     width: 50%; */
     font-size: 1.125em;
     width: 100%;
@@ -378,21 +376,12 @@ nav ul li a:hover:before {
     min-height: 50px;
     box-sizing: border-box;
 }
-#work a {
-    text-decoration: none;
-}
-#work a:visited {
-    color: #154D3F;
-}
-#work a:active,
-#work a:focus {
-    /* color:#FF9C90; */
-    /* text-shadow: .5px 1px #154D3F; */
-}
+
 #work p {
     padding: 0 1.25em 0 0;
 }
 
+/* This code targets the as of yet unused link button to an external Portfolio page. */
 a.portfolio-link {
     /* background: var(--primary-color); */
     background-color: rgba(255, 156, 144, .75);
@@ -576,13 +565,6 @@ a.portfolio-link:visited {
 /* #contact ul li a:link, 
 #contact ul li a:visited {
     color:#FFB82E;
-} */
-
-
-/* img#envelope {
-    height: 50px;
-    padding-left: 0;
-    width: 50px;
 } */
 
 svg {
