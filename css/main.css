@@ -302,7 +302,7 @@ nav ul li a:hover:before {
     max-width: 100%;
     height: auto;
     /* border: 2px solid #faffff; */
-    border: 2px solid #aebeb7;
+    border: 1px solid #aebeb7;
     border-radius: 2px;
 }
 /* Setting the #work img max-width: 100% & height: auto makes the image size responsively with the browser window. */
