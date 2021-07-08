@@ -160,11 +160,15 @@ h1 {
     font-weight: normal;
     text-shadow: 2px 2px 2px #154D3F;
 }
-#name {
+.name {
     color: #FFFFFF;
     font-weight: normal;
     padding: 1% 0 0;
     margin: 1% 0 .5%;
+    
+    text-decoration: none;
+}
+h1.name {
     font-size: 1.5em;
 }
 #intro {
@@ -211,7 +215,7 @@ nav ul li a:active {
     text-transform: uppercase;
 
     color: #FFFFFF;
-    text-decoration-thickness: 2px;
+    /* text-decoration-thickness: 2px; */
     transition: all 0.25s linear;
     position: relative;
 }
@@ -491,7 +495,7 @@ svg:focus {
 }
 .visually-hidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -518,17 +522,39 @@ footer p {
     margin: 0;
     padding: .5em;
 }
-#credit a {
+#copyright a {
     color: #FFFFFF;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
+    transition: all 0.25s linear;
+    position: relative;
 }
-#credit a:visited {
+#copyright a:visited {
     text-decoration: none;
+    color: #FFF;
 }
-#credit a:hover {
-    color: #FF9C90;
+#copyright a:hover,
+#copyright a:focus {
+    /* color: #FF9C90; */
+    color: #FFD2CD;
+}
+#copyright a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffb0a7;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+#copyright a:hover:before {
+    transform: scale(1);
 }
 
 
@@ -552,8 +578,8 @@ footer p {
         width: 42.5%;
     }
 
-    #name {
-        font-size: 2em;
+    h1.name {
+        font-size: 1.75em;
         padding: 0 0 0 4%;
     }
     #topnav {
@@ -662,6 +688,9 @@ footer p {
     }
 
     /* HERO SECTION */
+    h1.name {
+        font-size: 2em;
+    }
     nav {
         font-size: 1.25em;
     }
