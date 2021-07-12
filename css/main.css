@@ -236,7 +236,7 @@ nav ul li a:before {
     background-color: #ffb0a7;
     position: absolute;
     left: 0;
-    bottom: -10px; /* this is to match where the border is */
+    bottom: -3px; /* This is to match where the border is. */
     transform-origin: left; 
     transform: scale(0);
     transition: 0.25s linear;
@@ -478,12 +478,12 @@ a.portfolio-link:visited {
     margin: 1.875em 0 1.563em;
     padding: 0;
     display: flex;
-    justify-content: center;
-    max-width: 300px;
+    justify-content: space-around;
+    max-width: 500px;
 }
 #contact ul li {
     padding: 0 10%;
-    text-align: center;
+    /* text-align: center; */
     list-style-type: none;
 }
 
