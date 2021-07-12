@@ -681,6 +681,10 @@ footer p {
         margin: .5em 3%;
         max-width: 1200px;
     }
+
+    #contact ul li {
+        padding: 0 15%;
+    }
     #copyright p {
         font-size: 1em;
     }
