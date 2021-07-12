@@ -215,7 +215,8 @@ nav ul li a:active {
     text-transform: uppercase;
 
     color: #FFFFFF;
-    /* text-decoration-thickness: 2px; */
+    /* text-decoration-thickness: 2px;
+    text-decoration-color: #ffb0a7; */
     transition: all 0.25s linear;
     position: relative;
 }
@@ -264,8 +265,8 @@ nav ul li a:hover:before {
     font-weight: bold;
     margin: 1em 0 .5em;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.2em;
+    /* text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em; */
 }
 
 #work img {
@@ -398,6 +399,7 @@ a.portfolio-link:visited {
     background: -webkit-radial-gradient(#ffc3a0 50%, rgba(255, 156, 144, .75) 75%, rgba(255, 210, 205, .75) 100%);  /* Chrome 10-25, Safari 5.1-6 */
     background: radial-gradient(#ffc3a0 50%, rgba(255, 156, 144, .75) 75%, rgba(255, 210, 205, .75) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 48% 52% 63% 37% / 39% 61% 39% 61%;
+    /* z-index: 1; */
 }
 #about-img-frame {
     background: transparent;
@@ -405,7 +407,7 @@ a.portfolio-link:visited {
     border-radius: 41% 59% 57% 43% / 46% 48% 52% 54%;
     margin: 0 15%;
     /* position: absolute; */
-    /* z-index: 1; */
+    /* z-index: 2; */
 }
 #item1 {
     grid-row-start: 1;
@@ -444,10 +446,11 @@ a.portfolio-link:visited {
 #email a:link,
 #email a:visited {
     color: #FFFFFF;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.2em;
+    /* text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em; */
     transition: all 0.25s linear;
     position: relative;
+    text-decoration: none;
 }
 #email a:hover,
 #email a:focus {
@@ -528,8 +531,8 @@ footer p {
 #copyright a {
     color: #FFFFFF;
     text-decoration: none;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
+    /* text-decoration-thickness: 2px;
+    text-underline-offset: 2px; */
     transition: all 0.25s linear;
     position: relative;
 }
