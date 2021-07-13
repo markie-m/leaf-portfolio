@@ -496,7 +496,7 @@ svg:visited {
 }
 svg:hover, 
 svg:focus {
-    fill: #FFF;
+    /* fill: #FFF; */
     /* transform: scale(1.1); */
 }
 .visually-hidden {
