@@ -117,7 +117,7 @@ figure {
 .full-width {
     margin: 0 auto;
     overflow: auto;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -159,6 +159,9 @@ h1 {
     font-family: 'Noto Serif', serif;
     font-weight: normal;
     text-shadow: 2px 2px 2px #154D3F;
+}
+#topnav.full-width {
+    width: 100%;
 }
 .name {
     color: #FFFFFF;
