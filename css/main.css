@@ -438,6 +438,7 @@ a.portfolio-link:visited {
     margin-bottom: 0px;
     padding-bottom: 0px;
     text-align: center;
+    display: block;
 }
 #contact .third-width {
     width: 100%;
