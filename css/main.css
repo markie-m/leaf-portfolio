@@ -206,7 +206,7 @@ nav ul {
 }
 nav ul li {
     list-style-type: none;
-    padding: 2% 2% 0;
+    padding: .75em .75em 0;
     border-top: 3px solid #154d3f;
 }
 nav ul li a:link,
