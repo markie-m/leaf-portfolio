@@ -207,6 +207,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: .75em .75em 0;
+    /* Setting the padding from a % (2% 2% 0) to em measurement seems to have helped fix my li squishing bug... */
     border-top: 3px solid #154d3f;
 }
 nav ul li a:link,
@@ -487,7 +488,7 @@ a.portfolio-link:visited {
     width: 30%;
 }
 #contact ul li {
-    padding: 0 10%;
+    padding: 0 20px;
     /* text-align: center; */
     list-style-type: none;
 }
