@@ -500,11 +500,11 @@ svg:visited {
     fill: #FF9C90;
     /* transition: all .2s ease-in-out; */
 }
-/* svg:hover, 
+svg:hover, 
 svg:focus {
     fill: #FFF;
     transform: scale(1.1);
-} */
+}
 .visually-hidden {
     border: 0;
     clip: rect(0, 0, 0, 0);
