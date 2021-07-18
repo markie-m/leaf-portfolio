@@ -692,7 +692,7 @@ footer p {
         width: 20%;
     }
     #contact ul li {
-        padding: 0 15%;
+        padding: 0 10px;
     }
     #copyright p {
         font-size: 1em;
@@ -797,5 +797,9 @@ footer p {
     /* CONTACT STYLES */
     #contact .third-width {
         width: 33.33%;
+    }
+
+    #contact ul li {
+        padding: 0 20px;
     }
 }
