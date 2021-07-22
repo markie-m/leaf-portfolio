@@ -363,9 +363,6 @@ a.portfolio-link:visited {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap; */
-    /* display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto; */
 }
 
 #about .full-width {
