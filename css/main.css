@@ -548,7 +548,6 @@ footer p {
 }
 #copyright a:hover,
 #copyright a:focus {
-    /* color: #FF9C90; */
     color: #FFD2CD;
 }
 #copyright a:before {
