@@ -380,10 +380,13 @@ a.portfolio-link:visited {
     font-size: 1.125em;
     /* width: 80%; */
     text-align: center;
-    padding: 1em .5em;
+    padding: 1em 0;
     margin: 1.25em 0;
     background-color: #ffb0a7;
     color: #154D3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /***** Mobile ABOUT SECTION STYLES *****/
