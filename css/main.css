@@ -382,10 +382,6 @@ a.portfolio-link:visited {
     margin: 1.25em 0;
     background-color: #ffb0a7;
 }
-.language-list,
-.tool-list {
-    
-}
 
 /***** Mobile ABOUT SECTION STYLES *****/
 /* I'm using CSS Grid in my About section to address an issue I had getting my main About Me text (#item3) to line up next to the image and beneath the Spotlight text (#item2). */
