@@ -431,7 +431,7 @@ a.portfolio-link:visited {
 
 #about p {
     margin: 0 0 .5em;
-    text-align: justify;
+    /* text-align: justify; */
 }
 #about img {
     max-width: 100%;
