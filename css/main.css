@@ -93,7 +93,7 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 2em;
-    margin: 3% 0;
+    margin: 5% 0;
     text-align: center;
     width: 100%;
 }
@@ -262,7 +262,7 @@ nav ul li a:hover:before {
 /* An important trick to getting flexbox to behave as expected is to apply the display:flex & flex-flow: row wrap ON THE IMMEDIATE PARENT ELEMENT. If there are other elements/divs in between the two elements you're trying to target, the flex properties won't be applied. */
 
 #work h3 {
-    margin: 3% 0 0;
+    /* margin: 3% 0 0; */
 }
 
 #work h4 {
