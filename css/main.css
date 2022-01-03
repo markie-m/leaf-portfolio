@@ -251,7 +251,7 @@ nav ul li a:hover:before {
 }
 /* The preceding 2 selectors (nav ul li a:before & nav ul li a:hover:before)enable the animated l-to-r fill effect that I like. */
 
-/***** WORK SECTION STYLES *****/
+/***** Mobile WORK SECTION STYLES *****/
 #work {
     background-color: #f6f1ee;
     height: 45%;
@@ -349,7 +349,45 @@ a.portfolio-link:visited {
     color: #fff;
 }
 
-/***** ABOUT SECTION STYLES *****/
+/***** Mobile SKILLS SECTION STYLES *****/
+#skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 40px;
+}
+#skills .content-wrapper {
+    width: 85%;
+}
+
+#skills h4 {
+    text-align: center;
+}
+
+#skills ul {
+    padding: 0;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap; */
+}
+#skills li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    /* width: 80%; */
+    text-align: center;
+    padding: 1em .5em;
+    margin: 1.25em 0;
+    background-color: #ffb0a7;
+}
+.language-list,
+.tool-list {
+    
+}
+
+/***** Mobile ABOUT SECTION STYLES *****/
 /* I'm using CSS Grid in my About section to address an issue I had getting my main About Me text (#item3) to line up next to the image and beneath the Spotlight text (#item2). */
 
 /* In the MOBILE view, the grid will be a 1colx3row grid (because it doesn't contain the About Me h3 heading), meaning there will be a total of 2 column lines and 4 row lines with which to measure. This enables the use of the .full-width container to contain the items well past the max-width:1200px mark. See https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/ for more basic Grid knowledge. */
@@ -428,7 +466,7 @@ a.portfolio-link:visited {
     font-weight: 400;
 }
 
-/***** CONTACT SECTION STYLES *****/
+/***** Mobile CONTACT SECTION STYLES *****/
 #contact {
     background-color: #154D3F;
     color: #FFFFFF;
@@ -519,7 +557,7 @@ svg:focus {
     margin: 1em 0 2em;
 }
 
-/***** FOOTER SECTION STYLES *****/
+/***** Mobile FOOTER SECTION STYLES *****/
 footer {
     background-color: #154D3F;
     color: #FFFFFF;
@@ -632,6 +670,7 @@ footer p {
         margin: 1.125em 0 0.563em;
     }
    
+    /* WORK SECTION STYLES */
     .work-samples {
         padding: 0;
     }
@@ -650,6 +689,26 @@ footer p {
         width: 40%;
     }
 
+    /* Tablet SKILLS SECTION STYLES */
+    #skills .content-wrapper {
+        max-width: 640px;
+        width: initial;
+    }
+     /* ul.language-list, 
+    .tool-list  */
+    #skills ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    /* .language, 
+    .tool  */
+    #skills li {
+        width: 45%;
+    }
+
+    /* Tablet ABOUT SECTION STYLES */
     /* In the TABLET view, the ABOUT section CSS grid will be a 2colx2row grid, meaning there will be a total of 3 column lines and 3 row lines with which to measure. */
     #about .full-width {
         width: 100%;
@@ -684,6 +743,7 @@ footer p {
         max-width: 1200px;
     }
 
+    /* CONTACT SECTION STYLES */
     #contact ul {
         width: 20%;
     }
@@ -702,7 +762,7 @@ footer p {
         /* I want this max-width set on a div that wraps each section to keep each from expanding wildly as the browser window enlarges well past 1200px. */
     }
 
-    /* HERO SECTION */
+    /* HERO SECTION STYLES */
     h1.name {
         font-size: 2em;
     }
@@ -725,7 +785,7 @@ footer p {
         margin: 2% 4% 15%;
     }
     
-    /* WORK SECTION */
+    /* DESKTOP WORK SECTION STYLES */
     .work-samples {
         max-width: 1400px;
     }
@@ -748,6 +808,16 @@ footer p {
     }
     /* This is to create a uniform height for all the .work-sample cards. */
 
+    /* DESKTOP SKILLS SECTION STYLES */
+    #skills .content-wrapper {
+        max-width: 900px;
+    }
+    #skills li {
+        /* width: 33.33%; */
+        width: 29%;
+    }
+
+    /* DESKTOP ABOUT SECTION STYLES */
     /* In the DESKTOP view, the grid will STAY a 2colx2row grid, meaning there will be a total of 3 column lines and 3 row lines with which to measure and ENABLE the DESIRED REPOSITIONING of item4. */
     #about .full-width {
         width: 100%;
@@ -790,7 +860,7 @@ footer p {
         margin: .5em 0;
     }
     
-    /* CONTACT STYLES */
+    /* DESKTOP CONTACT SECTION STYLES */
     #contact .third-width {
         width: 33.33%;
     }
