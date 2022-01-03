@@ -195,7 +195,7 @@ h1.name {
     justify-content: space-between;
 }
 nav {
-    font-size: 1.125em;
+    font-size: 1em;
     width: 100%;
 }
 nav ul {
@@ -206,7 +206,7 @@ nav ul {
 }
 nav ul li {
     list-style-type: none;
-    padding: .75em .75em 0;
+    padding: .75em .5em 0;
     /* Setting the padding from a % (2% 2% 0) to em measurement seems to have helped fix my li squishing bug... */
     border-top: 3px solid #154d3f;
 }
@@ -356,6 +356,8 @@ a.portfolio-link:visited {
     align-items: center;
     flex-flow: row wrap;
     padding-bottom: 40px;
+    background-color: #154D3F;
+    color: #fff;
 }
 #skills .content-wrapper {
     width: 85%;
@@ -381,6 +383,7 @@ a.portfolio-link:visited {
     padding: 1em .5em;
     margin: 1.25em 0;
     background-color: #ffb0a7;
+    color: #154D3F;
 }
 
 /***** Mobile ABOUT SECTION STYLES *****/
@@ -634,6 +637,7 @@ footer p {
     }
     nav {
         justify-content: flex-end;
+        font-size: 1.125em;
     }
     nav ul{
         margin: 3%;
