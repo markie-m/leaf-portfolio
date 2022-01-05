@@ -799,6 +799,9 @@ footer p {
         flex-flow: row wrap;
         padding: 3%;
     } 
+    .work-sample:last-child {
+        margin-bottom: 3%;
+    }
     .sample-images {
         width: 100%;
     }
