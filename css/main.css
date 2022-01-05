@@ -316,6 +316,9 @@ nav ul li a:hover:before {
     box-shadow:  inset 20px 20px 60px #d1cdca,
     inset -20px -20px 60px #ffffff;
 }
+.work-sample:last-child {
+    margin-bottom: 5%;
+}
 #work figure {
     width: 100%;
     height: auto;
