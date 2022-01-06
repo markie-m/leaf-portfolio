@@ -672,7 +672,7 @@ footer p {
         margin: 1.125em 0 0.563em;
     }
    
-    /* WORK SECTION STYLES */
+    /* Tablet WORK SECTION STYLES */
     .work-samples {
         padding: 0;
     }
@@ -819,7 +819,7 @@ footer p {
     }
     #skills li {
         /* width: 33.33%; */
-        width: 29%;
+        width: 31%;
     }
 
     /* DESKTOP ABOUT SECTION STYLES */
