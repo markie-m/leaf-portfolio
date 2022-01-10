@@ -675,6 +675,9 @@ footer p {
     }
    
     /* Tablet WORK SECTION STYLES */
+    #work {
+        padding-bottom: 2%;
+    }
     .work-samples {
         padding: 0;
     }
@@ -792,6 +795,7 @@ footer p {
     /* DESKTOP WORK SECTION STYLES */
     .work-samples {
         max-width: 1400px;
+        padding-bottom: 2.5%;
     }
     .work-sample {
         width: 42%;
