@@ -683,9 +683,6 @@ footer p {
     }
     .work-sample {
         width: 85%;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: center; */
         padding: 3%;
     }
     .sample-wrap {
@@ -804,10 +801,6 @@ footer p {
     }
     .work-sample {
         width: 42%;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-flow: row wrap; */
         padding: 3%;
     } 
     .sample-wrap {
