@@ -383,11 +383,12 @@ a.portfolio-link:visited {
     text-align: center;
     padding: 1em 0;
     margin: 1.25em 0;
-    background-color: #ffb0a7;
+    background-color: var(--main-accent-color, salmon); 
     color: #154D3F;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--secondary-accent-color, lightpink);
 }
 
 /***** Mobile ABOUT SECTION STYLES *****/
